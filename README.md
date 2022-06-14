@@ -1,11 +1,14 @@
-# README
+# Adnat
+### (Ruby on Rails Challenge)
+---
+## Requirements: 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version: ruby 3.1.2
+- Rails versoin: Rails 7.0.3
 
-Things you may want to cover:
 
-* Ruby version
+---
+### Further considerations
 
 * System dependencies
 
