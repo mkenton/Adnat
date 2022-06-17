@@ -5,3 +5,22 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts "Clearing out previous seeded data..."
+Organization.destroy_all
+
+
+puts "🌱 seeding Organizations 🌱"
+2.times do 
+    organization = Organization.create!(
+      name: Faker::Company.name,
+      hourly_rate: Faker::Number.decimal(l_digits: 2, r_digits: 2)
+    )
+  end
+puts "...done seeding Organizations!"
+
+## TODO: for each org, create multiple users
+
+## TODO: for each user, create mutiple shifts
+
+puts "done seeding! 🚀"
