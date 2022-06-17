@@ -3,8 +3,9 @@
 ---
 ## Requirements: 
 
-- Ruby version: ruby 3.1.2
-- Rails versoin: Rails 7.0.3
+- Ruby: version 3.1.2
+- Rails version 7.0.3
+- Postgres: version 1.1
 
 
 ---
