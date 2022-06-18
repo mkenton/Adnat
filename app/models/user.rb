@@ -8,7 +8,8 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :email, uniqueness: true
   validates :email,
-  format: { with: /^(.+)@(.+)$/, message: "Invalid email format" },
+  format: { with: /^\w+([.-]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/, message: "Invalid email format" },
             uniqueness: { case_sensitive: false }
+## regex key: ^ start of string, $ end of string, \w alphanumeric, + one or more, * 0 or more, [] any of chars inside, ()capture groups
 
 end
