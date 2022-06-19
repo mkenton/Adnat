@@ -38,4 +38,4 @@ As an alternative of using the ./setup.sh file, you can manually run each comman
 % rails db:seed
 % bin/dev
 </pre>
-After each command, the terminal will output messages pertaining to the sucess of each setup step. After entering the last command (*bin/dev*), the terminal will run scripts, boot up the server and stay in listening mode on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
+After each command, the terminal will output messages pertaining to the sucess of each setup step. After entering the last command (*bin/dev*), the terminal will run scripts, boot up the server, listening mode on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
