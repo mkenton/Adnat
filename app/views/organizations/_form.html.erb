@@ -4,12 +4,12 @@
           <p style="color: red"><%= error.full_message %></p>
         <% end %>
   <% end %>
-
-  <div>
+<br>
+  <div class="d-flex flex-row">
     <%= form.label :name %>:
     <%= form.text_field :name %>
   </div>
- <br>
+<br>
   <div class="d-flex flex-row">
     <%= form.label :hourly_rate %>:
     $<%= form.number_field :hourly_rate, value: number_to_currency(form.object.hourly_rate.to_f, delimiter: ',', unit: ''), step: 0.01 %>
