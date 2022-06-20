@@ -3,11 +3,10 @@
 
 <div id="organizations">
   <% @organizations.each do |organization| %>
-    <%= render organization %>
-    <p>
-      <%= link_to "Show this organization", organization %>
-    </p>
+   <%= render organization %> 
+
   <% end %>
+  </div>
 </div>
 
-<%= link_to "New organization", new_organization_path %>
+<button> <%= link_to "New organization", new_organization_path %> </button>

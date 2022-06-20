@@ -1,4 +1,5 @@
-<%= form_with(model: organization, data: { turbo:false }) do |form| %>
+<%= form_with(model: organization, data: { turbo: false }
+) do |form| %>
   <% if organization.errors.any? %>
         <% organization.errors.each do |error| %>
           <p style="color: red"><%= error.full_message %></p>
