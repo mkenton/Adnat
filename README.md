@@ -22,12 +22,12 @@ In terminal, navigate to folder of the newly cloned repository. A setup file has
 <pre>
 % sudo chmod +x ./setup.sh
 </pre>
-Follow the command to enter your system password, and then run the following command:
+Follow the terminal instructions and enter your system password. Then run the following command:
 <pre>
 % ./setup.sh
 </pre>
 
-The terminal will output many lines to show the success of each step, boot up the server, and then stay in listening mode on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
+The terminal will output many lines to show the success of each step of creating the environment and then boot up the server, listening on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
 
 ### Alternative (Manual) Setup to Boot the Full Application
 As an alternative of using the ./setup.sh file, you can manually run each command necessary to get the app running. Ensure that your parent working directory is the newly cloned repository. Then, run each of the the following commands in order:
@@ -36,6 +36,6 @@ As an alternative of using the ./setup.sh file, you can manually run each comman
 % rails db:create
 % rails db:migrate
 % rails db:seed
-% rails s
+% bin/dev
 </pre>
-After each command, the terminal will output messages pertaining to the sucess of each setup step. After entering the last command (*rails s*), the terminal will boot up the server and stay in listening mode on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
+After each command, the terminal will output messages pertaining to the sucess of each setup step. After entering the last command (*bin/dev*), the terminal will run scripts, boot up the server, listening mode on port 3000. __The application is now ready to use!__ Simply navigate to __localhost:3000__ in your browser.
