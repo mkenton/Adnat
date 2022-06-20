@@ -11,10 +11,10 @@ Organization.destroy_all
 
 
 puts "🌱 seeding Organizations 🌱"
-2.times do 
+3.times do 
     organization = Organization.create!(
       name: Faker::Company.name,
-      hourly_rate: Faker::Number.decimal(l_digits: 2, r_digits: 2)
+      hourly_rate: 12.0 + Faker::Number.decimal(l_digits: 1, r_digits: 2)
     )
   end
 puts "...done seeding Organizations!"
